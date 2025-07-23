@@ -854,7 +854,7 @@ async def upload(bot: Client, m: Message):
                 url = url.split("bcov_auth")[0]+bcov 
               
             elif "classplusapp.com/drm/" in url:
-                url = f"https://scammer-keys.vercel.app/api?url={url}&token={raw_txt4}&auth=@scammer_botxz1"
+                url = f"https://scammer-keys.vercel.app/api?url={url}&token={token}&auth=@scammer_botxz1"
                 mpd, keys = helper.get_mps_and_keys(url)
                 url = mpd
                 keys_string = " ".join([f"--key {key}" for key in keys])
